@@ -1,6 +1,8 @@
 div#dSlider .dPreview {
   width: 75%;
-  height: 150px; }
+  height: 100px;
+  margin: auto;
+  overflow: hidden; }
   div#dSlider .dPreview ul {
     height: inherit;
     width: 6000px;
@@ -16,9 +18,10 @@ div#dSlider .dPreview {
         border-radius: 6px; }
 div#dSlider .dImgShow {
   width: 75%;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: auto;
+  text-align: center; }
   div#dSlider .dImgShow img {
+    margin: auto;
     height: inherit;
     border-radius: 10px;
     box-shadow: 0 0 10px #888888; }
