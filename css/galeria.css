@@ -1,0 +1,26 @@
+div#dSlider .dPreview {
+  width: 75%;
+  height: 150px; }
+  div#dSlider .dPreview ul {
+    height: inherit;
+    width: 6000px;
+    display: inline-block;
+    list-style: none; }
+    div#dSlider .dPreview ul li {
+      height: inherit;
+      float: left;
+      margin-left: 0.5em;
+      padding: 0; }
+      div#dSlider .dPreview ul li img {
+        height: inherit;
+        border-radius: 6px; }
+div#dSlider .dImgShow {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
+  div#dSlider .dImgShow img {
+    height: inherit;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #888888; }
+
+/*# sourceMappingURL=galeria.css.map */
