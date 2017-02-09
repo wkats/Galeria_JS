@@ -1,7 +1,6 @@
 var imgShow;
 var prevImgs;
 var temporizador;
-var coso=0;
 var incremento = 50;
 $(document).ready(init());
 	
@@ -12,8 +11,9 @@ function init(){
 	prevImgs.click(function(event) {
 		prevClick($(this));
 	});
-
-	temporizador = setInterval(movimiento,1500);
+	var coso = $("#dSlider .dPreview ul");	
+	temporizador = setInterval(function(){movimiento(coso);},1000);
+	//temporizador = setInterval(movimiento,1500);
 }
 
 function prevClick(imgObject){
@@ -23,10 +23,5 @@ function prevClick(imgObject){
 	imgShow.attr("src", imgObject.attr("src"));
 }
 
-function movimiento(){
-	coso++;
-	console.log("tick "+coso);
-	if((coso%4)==0){
-		$("#dSlider .dPreview ul").css('margin-left',incremento*10);
-	}
-}
+function movimiento(_ul){	
+	_ul.animate({"margin-left":"+=50"},1000);	
