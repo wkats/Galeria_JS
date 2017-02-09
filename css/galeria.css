@@ -1,10 +1,10 @@
 div#dSlider .dPreview {
   width: 75%;
-  height: 100px;
+  height: 120px;
   margin: auto;
   overflow: hidden; }
   div#dSlider .dPreview ul {
-    height: inherit;
+    height: 100px;
     width: 6000px;
     display: inline-block;
     list-style: none; }
@@ -18,11 +18,13 @@ div#dSlider .dPreview {
         border-radius: 6px; }
 div#dSlider .dImgShow {
   width: 75%;
+  display: block;
   margin: auto;
   text-align: center; }
   div#dSlider .dImgShow img {
     margin: auto;
-    height: inherit;
+    width: 75%;
+    display: block;
     border-radius: 10px;
     box-shadow: 0 0 10px #888888; }
 
